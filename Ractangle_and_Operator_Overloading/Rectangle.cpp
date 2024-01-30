@@ -78,7 +78,8 @@ int Rectangle::getArea() const{
         area = (p2.getX() - p1.getX()) * (p2.getX() - p1.getX()); // a * a
     }
     else {
-        area = 1/2 * ((p2.getX() - p1.getX()) + (p4.getY() - p2.getY())) * sqrt(pow((p2.getX() - p1.getX()), 2) + pow((p4.getY() - p2.getY()), 2)); // 1/2 * (a + b) * sqrt(pow(a,2) + pow(b, 2))
+        area = 1/2 * ((p2.getX() - p1.getX()) + (p4.getY() - p2.getY())) * sqrt(pow((p2.getX() - p1.getX()), 2) + pow((p4.getY() - p2.getY()), 2));
+            // 1/2 * (a + b) * sqrt(pow(a,2) + pow(b, 2))
     }
     
     return area;
